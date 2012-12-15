@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1B01C5167D1A2800BEC66F /* SDWatercolorMapSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B01C4167D1A2800BEC66F /* SDWatercolorMapSource.m */; };
+		5D1B01C9167D1DD800BEC66F /* SDTerrainMapSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B01C8167D1DD800BEC66F /* SDTerrainMapSource.m */; };
 		5DA97204167D00E3007F830F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA97203167D00E3007F830F /* UIKit.framework */; };
 		5DA97206167D00E3007F830F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA97205167D00E3007F830F /* Foundation.framework */; };
 		5DA97208167D00E3007F830F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA97207167D00E3007F830F /* CoreGraphics.framework */; };
@@ -18,9 +20,16 @@
 		5DA9721A167D00E3007F830F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA97219167D00E3007F830F /* Default-568h@2x.png */; };
 		5DA9721D167D00E3007F830F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA9721B167D00E3007F830F /* MainStoryboard.storyboard */; };
 		5DA97220167D00E3007F830F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA9721F167D00E3007F830F /* ViewController.m */; };
+		91F4E156081D40729EFB30FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C64B5D5B6FE4B21A94DA566 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C64B5D5B6FE4B21A94DA566 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA730C3D0AE443B9B9A2B1D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		5D1B01C3167D1A2800BEC66F /* SDWatercolorMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWatercolorMapSource.h; sourceTree = "<group>"; };
+		5D1B01C4167D1A2800BEC66F /* SDWatercolorMapSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWatercolorMapSource.m; sourceTree = "<group>"; };
+		5D1B01C7167D1DD800BEC66F /* SDTerrainMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTerrainMapSource.h; sourceTree = "<group>"; };
+		5D1B01C8167D1DD800BEC66F /* SDTerrainMapSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTerrainMapSource.m; sourceTree = "<group>"; };
 		5DA971FF167D00E3007F830F /* Watercolor Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watercolor Maps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA97203167D00E3007F830F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5DA97205167D00E3007F830F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,18 +56,31 @@
 				5DA97204167D00E3007F830F /* UIKit.framework in Frameworks */,
 				5DA97206167D00E3007F830F /* Foundation.framework in Frameworks */,
 				5DA97208167D00E3007F830F /* CoreGraphics.framework in Frameworks */,
+				91F4E156081D40729EFB30FD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D1B01CA167D27FB00BEC66F /* MapSources */ = {
+			isa = PBXGroup;
+			children = (
+				5D1B01C7167D1DD800BEC66F /* SDTerrainMapSource.h */,
+				5D1B01C8167D1DD800BEC66F /* SDTerrainMapSource.m */,
+				5D1B01C3167D1A2800BEC66F /* SDWatercolorMapSource.h */,
+				5D1B01C4167D1A2800BEC66F /* SDWatercolorMapSource.m */,
+			);
+			name = MapSources;
+			sourceTree = "<group>";
+		};
 		5DA971F4167D00E3007F830F = {
 			isa = PBXGroup;
 			children = (
 				5DA97209167D00E3007F830F /* Watercolor Maps */,
 				5DA97202167D00E3007F830F /* Frameworks */,
 				5DA97200167D00E3007F830F /* Products */,
+				0FA730C3D0AE443B9B9A2B1D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +98,7 @@
 				5DA97203167D00E3007F830F /* UIKit.framework */,
 				5DA97205167D00E3007F830F /* Foundation.framework */,
 				5DA97207167D00E3007F830F /* CoreGraphics.framework */,
+				0C64B5D5B6FE4B21A94DA566 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,6 +111,7 @@
 				5DA9721B167D00E3007F830F /* MainStoryboard.storyboard */,
 				5DA9721E167D00E3007F830F /* ViewController.h */,
 				5DA9721F167D00E3007F830F /* ViewController.m */,
+				5D1B01CA167D27FB00BEC66F /* MapSources */,
 				5DA9720A167D00E3007F830F /* Supporting Files */,
 			);
 			path = "Watercolor Maps";
@@ -117,6 +141,7 @@
 				5DA971FB167D00E3007F830F /* Sources */,
 				5DA971FC167D00E3007F830F /* Frameworks */,
 				5DA971FD167D00E3007F830F /* Resources */,
+				DBC700B13A5D464CB255229E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +193,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DBC700B13A5D464CB255229E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5DA971FB167D00E3007F830F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -176,6 +218,8 @@
 				5DA97210167D00E3007F830F /* main.m in Sources */,
 				5DA97214167D00E3007F830F /* AppDelegate.m in Sources */,
 				5DA97220167D00E3007F830F /* ViewController.m in Sources */,
+				5D1B01C5167D1A2800BEC66F /* SDWatercolorMapSource.m in Sources */,
+				5D1B01C9167D1DD800BEC66F /* SDTerrainMapSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,22 +297,28 @@
 		};
 		5DA97224167D00E3007F830F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA730C3D0AE443B9B9A2B1D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Watercolor Maps/Watercolor Maps-Prefix.pch";
 				INFOPLIST_FILE = "Watercolor Maps/Watercolor Maps-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		5DA97225167D00E3007F830F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA730C3D0AE443B9B9A2B1D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Watercolor Maps/Watercolor Maps-Prefix.pch";
 				INFOPLIST_FILE = "Watercolor Maps/Watercolor Maps-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -292,6 +342,7 @@
 				5DA97225167D00E3007F830F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
