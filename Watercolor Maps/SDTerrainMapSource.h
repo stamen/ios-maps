@@ -10,5 +10,4 @@
 
 
 @interface SDTerrainMapSource : RMAbstractWebMapSource
-
 @end

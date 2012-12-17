@@ -29,13 +29,4 @@
     [self.mapView setTileSource:[[SDWatercolorMapSource alloc] init]];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - RMMapViewDelegate methods
-
-
 @end
